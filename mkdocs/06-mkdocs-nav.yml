@@ -1,0 +1,16 @@
+###
+### mkdocs-nav.yml
+###
+
+nav:
+  - Start Here: welcome.md
+  - Labs:
+      - index.md
+      - 001 Introduction: 001-intro/README.md
+      - 002 Compose Demo: 002-Compose-Demo/README.md
+      - 002 Structure: 002-Structure/README.md
+      - 003 Commands: 003-Commands/README.md
+      - 004 Compose to Helm: 004-Compose-2Helm/README.md
+      - 005 Compose Advanced: 005-Compose-Advanced/README.md
+      - 006 Watch: 006-Watch/README.md
+      - 007 Networks: 007-Networks/README.md
