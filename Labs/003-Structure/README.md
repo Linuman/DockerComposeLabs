@@ -1,47 +1,31 @@
-![](../../resources/logos.png)
-
-[![Open in Cloud Shell](https://gstatic.com/cloudssh/images/open-btn.svg)](https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/nirgeier/DockerComposeLabs)
-
-### **<kbd>CTRL</kbd> + click to open in new window**
-
----
-
 # Docker Compose Structure - Complete Guide
 
 ## Description
 
-This comprehensive lab covers the complete structure and syntax of Docker Compose files. You'll learn about all the major configuration options, from basic service definitions to advanced features like health checks, networks, and volumes.
+This comprehensive lab covers the complete structure and syntax of `Docker Compose` files. You will learn about all the major configuration options, from basic service definitions to advanced features like health checks, networks and volumes.
+
+---
 
 ## Prerequisites
 
-- Completion of previous labs (001-intro, 002-Compose-Demo)
-- Basic understanding of Docker concepts
-- Familiarity with YAML syntax
+- Completion of previous labs (<a href="/DockerComposeLabs/001-intro/" target="_blank">001 - Introduction</a>, <a href="/DockerComposeLabs/002-Compose-Demo/" target="_blank">002 - Compose-Demo</a>).
+- Basic understanding of Docker concepts.
+- Familiarity with YAML syntax.
+
+
+
+<div style="border:2px solid #2196f3; border-radius:8px; padding:1em; margin:1em 0;">
+While the labs can be practiced using your local Docker environment, it is recommended to use a cloud-based solution like <b>Google Cloud Shell</b>, in which Docker and Docker Compose are pre-installed and ready to use.<br>
+<a href="https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/nirgeier/DockerComposeLabs" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg" alt="Open in Cloud Shell" /></a>
+</div>
+
+---
 
 ## Lab Overview
 
-This comprehensive guide covers the complete structure and anatomy of Docker Compose files. You'll master every aspect from basic service definitions to advanced production-ready configurations.
+This comprehensive guide covers the complete structure and anatomy of `Docker Compose` files. You will master every aspect from basic service definitions to advanced production-ready configurations.
 
-## Table of Contents
-
-- [Docker Compose Structure - Complete Guide](#docker-compose-structure---complete-guide)
-  - [Description](#description)
-  - [Prerequisites](#prerequisites)
-  - [Lab Overview](#lab-overview)
-  - [Table of Contents](#table-of-contents)
-    - [Example of a `docker-compose.yml` file structure](#example-of-a-docker-composeyml-file-structure)
-  - [Common Docker Compose Service Features](#common-docker-compose-service-features)
-  - [Feature Details](#feature-details)
-    - [`version`](#version)
-    - [`services`](#services)
-    - [`build` (Building an Image)](#build-building-an-image)
-    - [`image` (Using an Existing Image)](#image-using-an-existing-image)
-    - [`command` and `entrypoint`](#command-and-entrypoint)
-    - [`ports` (Port Mapping)](#ports-port-mapping)
-    - [`volumes` (Volume Management)](#volumes-volume-management)
-    - [`environment` (Environment Variables)](#environment-environment-variables)
-    - [`depends_on` (Service Dependencies)](#depends_on-service-dependencies)
-    - [`networks` (Defining Networks)](#networks-defining-networks)
+---
 
 ### Example of a `docker-compose.yml` file structure
   
@@ -64,6 +48,8 @@ volumes:
 networks:
   # Global network definitions (if any)
 ```
+
+---
 
 ## Common Docker Compose Service Features
 
@@ -89,11 +75,13 @@ Now, let's detail the most common features you can use within each service defin
 | `volumes`     | Defines volumes used for persistent data storage.                           |
 | `x-<feature_name>` | Custom extension fields for reusable configurations. |
 
+---
+
 ## Feature Details
 
 ### `version`
 
-- **Purpose:** Specifies the Compose file format version. Each version has specific features and rules. It's recommended to use recent 3.x versions.
+- **Purpose:** Specifies the `Docker Compose` file format version. Each version has specific features and rules. It's recommended to use recent 3.x versions.
 - **Example:**
 
     ```yaml
@@ -115,12 +103,12 @@ Now, let's detail the most common features you can use within each service defin
 
 ### `build` (Building an Image)
 
-- **Purpose:** Instead of using an existing image, `build` instructs Compose to build a new image from a `Dockerfile` located at the specified path.
+- **Purpose:** Instead of using an existing image, `build` instructs `Docker Compose` to build a new image from a `Dockerfile` located at the specified path.
 - **Options:**
-  - `context`: The path to the directory containing the `Dockerfile` and other files needed for the build.
-  - `dockerfile` (optional): The name of the Dockerfile if it's not `Dockerfile` (e.g., `Dockerfile.dev`).
-  - `args` (optional): Build arguments that will be passed to the `Dockerfile` during the build process (like `ARG`).
-  - `target` (optional): A specific build stage to target from a multi-stage `Dockerfile`.
+    - `context`: The path to the directory containing the `Dockerfile` and other files needed for the build.
+    - `dockerfile` (optional): The name of the `Dockerfile`, in cases that it is not named `Dockerfile` (e.g., `Dockerfile.dev`).
+    - `args` (optional): Build arguments that will be passed to the `Dockerfile` during the build process (like `ARG`).
+    - `target` (optional): A specific build stage to target from a multi-stage `Dockerfile`.
 - **Example:**
 
     ```yaml
@@ -137,7 +125,7 @@ Now, let's detail the most common features you can use within each service defin
 
 ### `image` (Using an Existing Image)
 
-- **Purpose:** Instructs Compose to pull and use an existing Docker image from a registry like Docker Hub.
+- **Purpose:** Instructs `Docker Compose` to pull and use an existing `Docker` image from a registry like `Docker Hub`.
 - **Example:**
 
     ```yaml
@@ -153,8 +141,8 @@ Now, let's detail the most common features you can use within each service defin
 ### `command` and `entrypoint`
 
 - **`command`**:
-  - **Purpose:** Defines the command that will be executed when the container starts. This command overrides the `CMD` defined in the image's `Dockerfile`.
-  - **Example:**
+    - **Purpose:** Defines the command that will be executed when the container starts. This command overrides the `CMD` defined in the image's `Dockerfile`.
+    - **Example:**
 
         ```yaml
         services:
@@ -164,8 +152,8 @@ Now, let's detail the most common features you can use within each service defin
         ```
 
 - **`entrypoint`**:
-  - **Purpose:** Defines the entry point for the container. The `command` (or `CMD` from the `Dockerfile`) will be passed as an argument to the `entrypoint`. This overrides the `ENTRYPOINT` defined in the `Dockerfile`.
-  - **Example:**
+    - **Purpose:** Defines the entry point for the container. The `command` (or `CMD` from the `Dockerfile`) will be passed as an argument to the `entrypoint`. This overrides the `ENTRYPOINT` defined in the `Dockerfile`.
+    - **Example:**
 
         ```yaml
         services:
@@ -175,12 +163,13 @@ Now, let's detail the most common features you can use within each service defin
             command: ["echo Hello from Docker Compose!"] # The command will be passed as an argument to bash -c
         ```
 
+
 ### `ports` (Port Mapping)
 
 - **Purpose:** Maps ports from the container to ports on the host machine, allowing access to the service from outside the container.
 - **Formats:**
-  - `"HOST_PORT:CONTAINER_PORT"`: Maps a specific port.
-  - `"CONTAINER_PORT"`: A random available host port will be mapped to `CONTAINER_PORT`.
+    - `"HOST_PORT:CONTAINER_PORT"`: Maps a specific port.
+    - `"CONTAINER_PORT"`: A random available host port will be mapped to `CONTAINER_PORT`.
 - **Example:**
 
     ```yaml
@@ -195,10 +184,10 @@ Now, let's detail the most common features you can use within each service defin
 
 ### `volumes` (Volume Management)
 
-- **Purpose:** Allows for persistent data storage, ensuring data remains even if the container is recreated or removed. You can map files/directories from the host machine into the container (bind mounts) or use Docker-managed volumes (named volumes).
-- **Formats:**
-  - `"HOST_PATH:CONTAINER_PATH"`: Bind mount.
-  - `"VOLUME_NAME:CONTAINER_PATH"`: Named volume.
+- **Purpose:** Allows for persistent data storage - ensuring data remains even if the container is recreated or removed. You can map files / directories from the host machine into the container (bind mounts) or use Docker-managed volumes (named volumes).
+  - **Formats:**
+    - `"HOST_PATH:CONTAINER_PATH"`: Bind mount
+    - `"VOLUME_NAME:CONTAINER_PATH"`: Named volume
 - **Example:**
 
     ```yaml
@@ -208,23 +197,24 @@ Now, let's detail the most common features you can use within each service defin
         volumes:
           - db_data:/var/lib/postgresql/data # Named volume for persistent DB data
           - ./app/config:/etc/app/config     # Bind mount: maps host folder to container (for config files)
-
     ```
 
-volumes: \# Global volume definitions
-db\_data:
-driver: local \# Volume driver (default)
-\# You can also add options or driver\_opts for advanced configurations,
-\# e.g., driver\_opts: {type: nfs, o: "addr=192.168.1.100,nolock,rw", device: ":/export/data"}
-\# but this is less common for a simple guide.
-\`\`\`
+    ```yaml
+    volumes: \# Global volume definitions
+    db\_data:
+    driver: local \# Volume driver (default)
+    \# You can also add options or driver\_opts for advanced configurations,
+    \# e.g., driver\_opts: {type: nfs, o: "addr=192.168.1.100,nolock,rw", device: ":/export/data"}
+    \# but this is less common for a simple guide.
+    ```
+
 
 ### `environment` (Environment Variables)
 
-- **Purpose:** Defines environment variables for the container. Useful for passing configuration details like passwords, API keys, or environment settings (development/production).
+- **Purpose:** Defines environment variables for the container. Useful for passing configuration details like passwords, API keys or environment settings (development / production).
 - **Formats:**
-  - List of `KEY=VALUE` strings.
-  - Map of `KEY: VALUE` pairs.
+    - List of `KEY=VALUE` strings
+    - Map of `KEY: VALUE` pairs
 - **Example:**
 
     ```yaml
@@ -238,11 +228,16 @@ driver: local \# Volume driver (default)
           - DEBUG=true # Another format for lists
     ```
 
-    *Tip: For sensitive variables, consider using a `.env` file (in the same directory as your `docker-compose.yml`) or Docker Secrets.*
+??? tip "Sensitive Variables"
+    For best practice when using sensative varuables, consider using a `.env` file (to be placed in the same directory as your `docker-compose.yml`) or `Docker Secrets`.
 
 ### `depends_on` (Service Dependencies)
 
-- **Purpose:** Defines the startup order between services. Services will only start after the services they depend on have been started. *Important: `depends_on` ensures the container has started, but not necessarily that the service within it is ready to accept connections (e.g., a database fully booted and listening).*
+- **Purpose:** Defines the startup order between services, so services will only start after the services they depend on have been started.
+
+!!! warning "Important"
+    `depends_on` ensures the container has started, but not necessarily that the service within it is ready to accept connections (e.g., a database fully booted and listening).
+
 - **Example:**
 
     ```yaml
@@ -267,6 +262,7 @@ driver: local \# Volume driver (default)
 ### `networks` (Defining Networks)
 
 - **Purpose:** Allows you to define custom networks so that services can communicate with each other. Services on the same network can communicate using their service names (DNS resolution).
+
 - **Example:**
 
     ```yaml
@@ -288,23 +284,25 @@ driver: local \# Volume driver (default)
           - db_network # Connected to db_network
 
     networks:  # Global network definitions
-    frontend_network:
-      # driver: bridge (default)
-    backend_network:
-      # driver: bridge
-    db_network:
-      internal: true # Internal network only (not accessible from the host)
-      # ipam:
-      #   config:
-      #     - subnet: 172.20.0.0/24 # Defines an IP range for the network for the  
-   ```
+      frontend_network:
+        # driver: bridge (default)
+      backend_network:
+        # driver: bridge
+      db_network:
+        internal: true # Internal network only (not accessible from the host)
+        # ipam:
+        #   config:
+        #     - subnet: 172.20.0.0/24 # Defines an IP range for the network for the  
+    ```
 
 ### `links` (Linking Services - Legacy)
 
-- **Purpose:** Allows linking older services (pre-Compose v2) and provides aliases for hostnames. **It is highly recommended to use `networks` instead of `links` in newer Compose versions (v2 and above), as `links` is considered legacy.**
+- **Purpose:** Allow linking older services (pre-Compose v2) and provides aliases for hostnames. **It is highly recommended to use `networks` instead of `links` in newer `Docker Compose` versions (v2 and above), as `links` are considered legacy.**
+
 - **Example (Not recommended for new usage):**
 
     ```yaml
+    
     services:
       web:
         image: my_web_app
@@ -314,7 +312,7 @@ driver: local \# Volume driver (default)
 
 ### `container_name` (Custom Container Name)
 
-- **Purpose:** Allows you to specify a custom name for the running container, instead of the name Docker Compose automatically generates (usually `project_service_index`).
+- **Purpose:** Allows you to specify a custom name for the running container, instead of the name `Docker Compose` automatically generates (usually `project_service_index`).
 - **Example:**
 
     ```yaml
@@ -328,12 +326,14 @@ driver: local \# Volume driver (default)
 
 ### `restart` (Restart Policy)
 
-- **Purpose:** Determines how the container will be restarted if it exits or crashes.
+- **Purpose:** Determines how the container will be restarted, in cases it exits or crashes.
+
 - **Options:**
-  - `no`: Does not restart (default).
-  - `on-failure`: Restarts only if the container exits with a non-zero exit code.
-  - `always`: Always restarts, even if the container exits successfully.
-  - `unless-stopped`: Always restarts unless it is explicitly stopped.
+    - `no`: Does not restart (default).
+    - `on-failure`: Restarts only if the container exits with a non-zero exit code.
+    - `always`: Always restarts, even if the container exits successfully.
+    - `unless-stopped`: Always restarts unless it is explicitly stopped.
+
 - **Example:**
 
     ```yaml
@@ -345,13 +345,15 @@ driver: local \# Volume driver (default)
 
 ### `healthcheck` (Health Check)
 
-- **Purpose:** Defines how Docker can check if the container (and the service within it) is healthy and functional. This is particularly useful in conjunction with `depends_on` to ensure a dependent service is truly ready before other services connect to it.
+- **Purpose:** Defines how `Docker` can check if the container, and the service running within it, are healthy and functional. This is particularly useful in conjunction with `depends_on`, in order to ensure a dependent service is truly ready before other services connect to it.
+
 - **Options:**
-  - `test`: The command to be executed for the health check.
-  - `interval`: How often to run the check (default: 30s).
-  - `timeout`: Maximum time allowed for a single check to complete (default: 30s).
-  - `retries`: How many consecutive failures are needed to consider the container unhealthy (default: 3).
-  - `start_period`: Initialization time to allow a container to bootstrap. During this period, health check failures will not count towards the maximum retries (default: 0s).
+    - `test`: Sets the command to be executed for the health check.
+    - `interval`: Determines how often to run the check (default: 30s).
+    - `timeout`: Sets the maximum time allowed for a single check to complete (default: 30s).
+    - `retries`: Sets how many consecutive failures are needed to consider the container unhealthy (default: 3).
+    - `start_period`: Sets initialization time to allow a container to bootstrap. During this period, health check failures will not count towards the maximum retries (default: 0s).
+
 - **Example:**
 
     ```yaml
@@ -385,9 +387,9 @@ driver: local \# Volume driver (default)
 
 ---
 
-## Complete `docker-compose.yml` Example
+## A Complete `docker-compose.yml` Example
 
-Here's an example combining many of the features discussed, illustrating a simple web application with a backend API and a database:
+Here is an example combining many of the features discussed above, while illustrating a simple web application alongside a backend API and a database:
 
 ```yaml
 version: '3.8'
@@ -471,6 +473,3 @@ networks:
     internal: true # Makes this network only accessible by containers connected to it, not from the host directly
 ```
 
-## Navigation <!-- omit in toc -->
-
-[← Previous: 002-Compose-Demo](../002-Compose-Demo/README.md) | [Next: 003-Commands →](../003-Commands/03-Commands.md)
