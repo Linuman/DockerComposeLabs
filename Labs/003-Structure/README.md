@@ -1,4 +1,4 @@
-# Docker Compose Structure - Complete Guide
+# Lab 003 -Docker Compose Structure - Complete Guide
 
 ## Description
 
@@ -51,7 +51,7 @@ networks:
 
 ---
 
-## Common Docker Compose Service Features
+### Common Docker Compose Service Features
 
 Now, let's detail the most common features you can use within each service definition:
 
@@ -387,7 +387,7 @@ Now, let's detail the most common features you can use within each service defin
 
 ---
 
-## A Complete `docker-compose.yml` Example
+## Configuration File
 
 Here is an example combining many of the features discussed above, while illustrating a simple web application alongside a backend API and a database:
 

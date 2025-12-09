@@ -1,7 +1,7 @@
 
 
 
-# Docker Compose Demo - Multi-Container Application
+# Lab --2 - Docker Compose Demo - Multi-Container Application
 
 <dv>
 
@@ -34,9 +34,9 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 This `docker-compose-sample.yml` file defines a multi-container application with three services: `web`, `app`, and `db`. Below is a detailed explanation of each section.
 
-## Services
+### Services
 
-### 1. `web` Service
+#### 1. `web` Service
 
 - **Image**: Uses the official `nginx:latest` image.
 - **Container Name**: The container is named `web-container`.
@@ -48,7 +48,7 @@ This `docker-compose-sample.yml` file defines a multi-container application with
 - **Networks**: Connects to the `webnet` network.
 - **Restart Policy**: Always restarts the container if it stops.
 
-### 2. `app` Service
+#### 2. `app` Service
 
 - **Build**: Builds the image from a `Dockerfile` located in the `./app` directory.
 - **Container Name**: The container is named `app-container`.
@@ -59,7 +59,7 @@ This `docker-compose-sample.yml` file defines a multi-container application with
 - **Networks**: Connects to both `webnet` and `dbnet` networks.
 - **Restart Policy**: Restarts the container on failure.
 
-### 3. `db` Service
+#### 3. `db` Service
 
 - **Image**: Uses the official `postgres:latest` image.
 - **Container Name**: The container is named `db-container`.
@@ -73,13 +73,13 @@ This `docker-compose-sample.yml` file defines a multi-container application with
 
 ---
 
-## Volumes
+### Volumes
 
 - **`db-data`**: A named volume used by the `db` service to persist `PostgreSQL` database.
 
 ---
 
-## Networks
+### Networks
 
 - **`webnet`**: A custom network used by the `web` and `app` services to communicate.
 - **`dbnet`**: A custom network used by the `app` and `db` services to communicate.
@@ -96,6 +96,8 @@ This `docker-compose-sample.yml` file demonstrates how to define services, manag
 2. **Analyze Service Dependencies**: Study how the `app` service depends on the `db` service.
 3. **Understand Networking**: See how services communicate through custom networks.
 4. **Review Volume Management**: Learn how data persistence is handled with defined volumes.
+
+---
 
 ## Key Learning Points
 

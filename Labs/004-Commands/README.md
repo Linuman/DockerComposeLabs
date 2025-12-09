@@ -1,4 +1,4 @@
-# Docker Compose Commands - Essential CLI Reference
+# Lab 004 - Docker Compose Commands - Essential CLI Reference
 
 ## Description
 
@@ -27,7 +27,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
 
 ---
 
-## `Docker Compose` Commands
+### `Docker Compose` Commands
 
 - The `Docker Compose commands` are used to interact with `Docker Compose` from the command line.
 - They allow you to manage multi-container `Docker` applications defined in a `docker-compose.yml` file.
@@ -48,11 +48,11 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
 
 ---
 
-## `Command` Examples
+### `Command` Examples
 
-### Explanation and Examples for `Commands`
+#### Explanation and Examples for `Commands`
 
-#### `docker compose up`
+##### `docker compose up`
 
 - **Explanation**: Builds, (re)creates, starts, and attaches to containers for a service.
 - **Example**:
@@ -63,7 +63,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose up -d
     ```
 
-#### `docker compose down`
+##### `docker compose down`
 
 - **Explanation**: Stops containers and removes containers, networks, volumes and images that have been created by `docker compose up`.
 
@@ -74,7 +74,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose down --volumes
     ```
 
-#### `docker compose build`
+##### `docker compose build`
 
 - **Explanation**: Builds or rebuilds services defined in the `docker-compose.yml` file.
 - **Example**:
@@ -84,7 +84,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose build
     ```
 
-#### `docker compose ps`
+##### `docker compose ps`
 
 - **Explanation**: Lists containers for the application that have been defined in the `docker-compose.yml` file.
 - **Example**:
@@ -94,7 +94,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose ps
     ```
 
-#### `docker compose logs`
+##### `docker compose logs`
 
 - **Explanation**: Displays log output from services.
 - **Example**:
@@ -104,7 +104,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose logs -f
     ```
 
-#### `docker compose exec`
+##### `docker compose exec`
 
 - **Explanation**: Executes a command in a running container.
 - **Example**:
@@ -114,7 +114,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose exec web bash
     ```
 
-#### `docker compose pull`
+##### `docker compose pull`
 
 - **Explanation**: Pulls service images defined in the `docker-compose.yml` file.
 - **Example**:
@@ -124,7 +124,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose pull
     ```
 
-#### `docker compose restart`
+##### `docker compose restart`
 
 - **Explanation**: Restarts services.
 - **Example**:
@@ -134,7 +134,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose restart web
     ```
   
-#### `docker compose stop`
+##### `docker compose stop`
 
 - **Explanation**: Stops running containers without removing them.
 - **Example**:
@@ -144,7 +144,7 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
     docker compose stop
     ```
 
-#### `docker compose start`
+##### `docker compose start`
 
 - **Explanation**: Starts existing containers for a service.
 - **Example**:
@@ -156,22 +156,22 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
 
 ---
 
-## `Command` Categories and Use Cases
+### `Command` Categories and Use Cases
 
-### Development Workflow `Commands`
+#### Development Workflow `Commands`
 
 - **`docker compose up -d`**: Start development environment in background
 - **`docker compose logs -f [service]`**: Monitor application logs during development
 - **`docker compose exec [service] bash`**: Debug issues by accessing container shell
 - **`docker compose down`**: Clean shutdown of development environment
 
-### Build and Update `Commands`
+#### Build and Update `Commands`
 
 - **`docker compose build`**: Rebuild images after code changes
 - **`docker compose pull`**: Update to latest base images
 - **`docker compose up --build`**: Rebuild and restart in one command
 
-### Maintenance `Commands`
+#### Maintenance `Commands`
 
 - **`docker compose ps`**: Show the running / stopped containers (output includes: container name, command, state and ports)
 - **`docker compose restart [service]`**: Restart specific problematic services
@@ -179,16 +179,16 @@ This comprehensive command guide covers the `Docker Compose` CLI, focusing on th
 
 ---
 
-## Advanced `Command` Options
+### Advanced `Command` Options
 
-### Common Flags and Options
+#### Common Flags and Options
 
 - **`-f, --file`**: Specify custom `Docker Compose` file name
 - **`-p, --project-name`**: Override project name
 - **`--env-file`**: Specify environment file
 - **`--profile`**: Activate specific service profiles
 
-### Examples with Advanced Options
+#### Examples with Advanced Options
 
 ```bash
 # Use custom compose file
@@ -203,9 +203,9 @@ docker compose --env-file .env.production up -d
 
 ---
 
-## Troubleshooting Commands
+### Troubleshooting Commands
 
-### Debugging Issues
+#### Debugging Issues
 
 ```bash
 # View detailed container information

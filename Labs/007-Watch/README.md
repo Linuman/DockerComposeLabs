@@ -1,4 +1,4 @@
-# Docker Compose Watch
+# Lab 007 - Docker Compose Watch
 
 `Docker Compose Watch` is a powerful tool for monitoring changes in your `Docker Compose` setup and automatically rebuilding or restarting services when changes are detected. 
 
@@ -34,7 +34,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Key Benefits
+### Key Benefits
 
 - **Efficiency**: Automates rebuilding and restarting processes.
 - **Consistency**: Ensures changes are immediately reflected in containers.
@@ -44,29 +44,29 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Use Cases:
+### Use Cases:
 
-### 1. Web Application Development
+#### 1. Web Application Development
 
 Automatically reloads applications when code changes are detected in source files.
 
-### 2. Microservices Development
+#### 2. Microservices Development
 
 Keeps multiple services synchronized during development cycles.
 
-### 3. Configuration Management
+#### 3. Configuration Management
 
 Applies configuration file changes without requiring manual restarts.
 
-### 4. Rapid Testing
+#### 4. Rapid Testing
 
 Facilitates quick testing of changes in isolated container environments.
 
 ---
 
-## Implementation Examples
+### Implementation Examples
 
-### Example 1: Basic Application Code Watching
+#### Example 1: Basic Application Code Watching
 
 ```yaml
 version: '3.8'
@@ -85,7 +85,7 @@ services:
           target: /usr/src/app
 ```
 
-### Example 2: Configuration File Watching
+#### Example 2: Configuration File Watching
 
 ```yaml
 version: '3.8'
@@ -101,7 +101,7 @@ services:
           path: ./config
 ```
 
-### Example 3: Multi-Service Watch Setup
+#### Example 3: Multi-Service Watch Setup
 
 ```yaml
 version: '3.8'
@@ -128,9 +128,9 @@ services:
 ---
 
 
-## Demo: File Watching with Python
+### Demo: File Watching with Python
 
-### - Bash Script (`watch_demo.sh`)
+#### - Bash Script (`watch_demo.sh`)
 
 ```bash
 #!/bin/bash
@@ -148,7 +148,7 @@ while inotifywait -e modify "$counter_file"; do
 done
 ```
 
-### - Python Script (`print_counter.py`)
+#### - Python Script (`print_counter.py`)
 
 ```python
 import os
@@ -226,7 +226,7 @@ while True:
 ---
 
 
-## When to Use `Docker Compose Watch`
+### When to Use `Docker Compose Watch`
 
 `Docker Compose Watch` is ideal for:
 
