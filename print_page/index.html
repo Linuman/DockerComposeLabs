@@ -94,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#index" class="md-skip">
+        <a href="#section-1" class="md-skip">
           Skip to content
         </a>
       
@@ -362,25 +362,6 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href=".." class="md-tabs__link">
-        
-  
-  
-    
-  
-  Start Here
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
     
     
       <li class="md-tabs__item">
@@ -390,7 +371,7 @@
   
     
   
-  Labs
+  Labs Overview
 
         </a>
       </li>
@@ -462,28 +443,6 @@
   
   
   
-    <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Start Here
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
     
     
       
@@ -532,7 +491,7 @@
   
   
   <span class="md-ellipsis">
-    Labs
+    Labs Overview
     
   </span>
   
@@ -572,210 +531,11 @@
                 </nav>
             </div>
         </section>
-        <section class="print-page" id="index" heading-number="1"><h1 id="index-docker-compose-labs-overview">Docker Compose Labs Overview<a class="headerlink" href="#index-docker-compose-labs-overview" title="Permanent link">&para;</a></h1>
-<hr />
-<h3 id="index-preface">Preface<a class="headerlink" href="#index-preface" title="Permanent link">&para;</a></h3>
-<ul>
-<li><code>Docker Compose</code> is a tool for defining and running multi-container <code>Docker</code> applications</li>
-<li>With <code>Docker Compose</code>, you use a <code>YAML</code> file to configure your application&rsquo;s services</li>
-<li>Then, with a single command, you can create and start all the services from your configuration</li>
-<li><code>Docker Compose</code> simplifies the development, testing, and deployment of complex applications</li>
-</ul>
-<hr />
-<h2 id="index-docker-compose-overview">Docker Compose Overview<a class="headerlink" href="#index-docker-compose-overview" title="Permanent link">&para;</a></h2>
-<ul>
-<li><code>Docker Compose</code> allows you to <strong>define multiple services</strong> in a single <code>YAML</code> file</li>
-<li>Services can be <strong>linked together</strong> through networks and dependencies</li>
-<li><code>Docker Compose</code> manages the <strong>entire application lifecycle</strong></li>
-</ul>
-<hr />
-<h3 id="index-key-benefits">Key Benefits<a class="headerlink" href="#index-key-benefits" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>Simplified Multi-Container Management</strong>: Define and run multiple containers with a single command</li>
-<li><strong>Environment Consistency</strong>: Ensure the same environment across development, testing and production</li>
-<li><strong>Service Dependencies</strong>: Control the startup order and dependencies between services</li>
-<li><strong>Network Isolation</strong>: Create isolated networks for your application components</li>
-<li><strong>Volume Management</strong>: Persist data and share files between containers and the host</li>
-</ul>
-<hr />
-<h3 id="index-docker-compose-file-structure">Docker Compose File Structure<a class="headerlink" href="#index-docker-compose-file-structure" title="Permanent link">&para;</a></h3>
-<ul>
-<li>A <code>docker-compose.yml</code> file defines your application&rsquo;s services, networks, and volumes</li>
-<li><strong>Services</strong>: Define the containers that make up your application</li>
-<li><strong>Networks</strong>: Create custom networks for service communication</li>
-<li><strong>Volumes</strong>: Manage data persistence and sharing</li>
-</ul>
-<h3 id="index-core-concepts">Core Concepts<a class="headerlink" href="#index-core-concepts" title="Permanent link">&para;</a></h3>
-<h4 id="index-version"><code>version</code><a class="headerlink" href="#index-version" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Specifies the Compose file format version</li>
-<li>Different versions support different features</li>
-<li>Latest version provides the most features and compatibility</li>
-</ul>
-<h4 id="index-services"><code>services</code><a class="headerlink" href="#index-services" title="Permanent link">&para;</a></h4>
-<ul>
-<li>The main section where you define your application containers</li>
-<li>Each service represents a single container</li>
-<li>Services can be built from <code>Dockerfiles</code> or use existing images</li>
-</ul>
-<h4 id="index-networks"><code>networks</code><a class="headerlink" href="#index-networks" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Define custom networks for service communication</li>
-<li>Services on the same network can communicate using service names</li>
-<li>Provides isolation between different application components</li>
-</ul>
-<h4 id="index-volumes"><code>volumes</code><a class="headerlink" href="#index-volumes" title="Permanent link">&para;</a></h4>
-<ul>
-<li>Define named volumes for data persistence</li>
-<li>Share data between containers</li>
-<li>Persist data beyond container lifecycle</li>
-</ul>
-<hr />
-<h2 id="index-available-labs">📚 Available Labs<a class="headerlink" href="#index-available-labs" title="Permanent link">&para;</a></h2>
-<h3 id="index-001-introduction"><a href="#dockercomposelabs-001-intro" target="_blank">001 - Introduction</a><a class="headerlink" href="#index-001-introduction" title="Permanent link">&para;</a></h3>
-<p><strong>Introduction to <code>Docker Compose</code></strong></p>
-<p>This lab provides a comprehensive introduction to <code>Docker Compose</code>, a tool for defining and running multi-container Docker applications. You will learn the fundamentals of <code>Docker Compose</code> and how to set it up on different operating systems.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>What <code>Docker Compose</code> is, and what are its benefits</li>
-<li>How to install <code>Docker Compose</code> on different platforms</li>
-<li>Basic concepts of multi-container orchestration</li>
-</ul>
-<h3 id="index-002-compose-demo"><a href="#dockercomposelabs-002-compose-demo" target="_blank">002 - Compose Demo</a><a class="headerlink" href="#index-002-compose-demo" title="Permanent link">&para;</a></h3>
-<p><strong>Multi-Container Application Demo</strong></p>
-<p>This lab demonstrates a practical <code>Docker Compose</code> example with a multi-container application. You will explore a complete <code>docker-compose-sample.yml</code> file that defines three inter-connected services:</p>
-<ol>
-<li>a web server</li>
-<li>an application</li>
-<li>a database</li>
-</ol>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Basic <code>docker-compose.yml</code> file structure</li>
-<li>Multi-service application configuration</li>
-<li>Web server, application, and database integration</li>
-</ul>
-<h3 id="index-003-structure"><a href="#dockercomposelabs-003-structure" target="_blank">003 - Structure</a><a class="headerlink" href="#index-003-structure" title="Permanent link">&para;</a></h3>
-<p><strong>Complete <code>Docker Compose</code> Structure Guide</strong></p>
-<p>This comprehensive lab covers the complete structure and syntax of <code>Docker Compose</code> files. You will learn about all the major configuration options, from basic service definitions to advanced features like: health checks, networks and volumes.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Detailed <code>docker-compose.yml</code> structure</li>
-<li>Common service configurations</li>
-<li>Best practices for service definition</li>
-</ul>
-<h3 id="index-004-commands"><a href="#dockercomposelabs-004-commands" target="_blank">004 - Commands</a><a class="headerlink" href="#index-004-commands" title="Permanent link">&para;</a></h3>
-<p><strong>Essential <code>Docker Compose</code> CLI (Command Line Interface) Reference</strong></p>
-<p>This lab provides a comprehensive guide to the <code>Docker Compose</code> command-line interface. You will master all the essential commands needed to manage multi-container applications effectively, from basic startup and shutdown to advanced debugging and maintenance operations.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Essential <code>Docker Compose</code> commands</li>
-<li>Managing application lifecycle</li>
-<li>Debugging and troubleshooting</li>
-</ul>
-<h3 id="index-005-compose-to-helm"><a href="#dockercomposelabs-005-compose-2helm" target="_blank">005 - Compose to Helm</a><a class="headerlink" href="#index-005-compose-to-helm" title="Permanent link">&para;</a></h3>
-<p><strong>Creating and Using Helm Charts</strong></p>
-<p>Helm is a powerful package manager for Kubernetes that simplifies the deployment and management of applications. This lab will walk you through the process of creating and using a Helm chart as well as converting <code>Docker Compose</code> configurations to Kubernetes deployments.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Converting <code>Docker Compose</code> to Helm charts</li>
-<li>Kubernetes deployment strategies</li>
-<li>Migration from development to production</li>
-</ul>
-<h3 id="index-006-compose-advanced"><a href="#dockercomposelabs-006-compose-advanced" target="_blank">006 - Compose Advanced</a><a class="headerlink" href="#index-006-compose-advanced" title="Permanent link">&para;</a></h3>
-<p><strong>Advanced <code>Docker Compose</code> Configuration</strong></p>
-<p>This lab demonstrates advanced <code>Docker Compose</code> features, including the <code>extends</code> functionality, <code>YAML anchors</code>, and modular service definitions for a complete monitoring stack with <code>Grafana</code>, <code>Loki</code>, <code>Prometheus</code> and more.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Advanced <code>Docker Compose</code> features</li>
-<li>Complex service configurations</li>
-<li>Production-ready setups with monitoring</li>
-</ul>
-<h3 id="index-007-watch"><a href="#dockercomposelabs-007-watch" target="_blank">007 - Watch</a><a class="headerlink" href="#index-007-watch" title="Permanent link">&para;</a></h3>
-<p><strong><code>Docker Compose</code> Watch Feature</strong></p>
-<p><code>Docker Compose Watch</code> is a powerful tool for monitoring changes in your <code>Docker Compose</code> setup and automatically rebuilding or restarting services when changes are detected. This lab demonstrates how to implement and use <code>Docker Compose Watch</code> for streamlined development workflows.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li><code>Docker Compose Watch</code> feature</li>
-<li>Live reload and development workflows</li>
-<li>File synchronization and hot reloading</li>
-</ul>
-<h3 id="index-008-networks"><a href="#dockercomposelabs-008-networks" target="_blank">008 - Networks</a><a class="headerlink" href="#index-008-networks" title="Permanent link">&para;</a></h3>
-<p><strong>Multi-Network Architecture</strong></p>
-<p>This lab showcases a production-like microservices architecture with proper network segmentation, security boundaries, and service isolation. The example includes 8 different networks, each serving specific purposes and demonstrating various networking patterns used in enterprise applications.</p>
-<p><strong>What You will Learn:</strong></p>
-<ul>
-<li>Advanced multi-network architecture</li>
-<li>Network segmentation and security</li>
-<li>Service discovery and isolation patterns</li>
-<li>DMZ and monitoring network configurations</li>
-</ul>
-<hr />
-<h2 id="index-additional-features">Additional Features<a class="headerlink" href="#index-additional-features" title="Permanent link">&para;</a></h2>
-<h3 id="index-docker-compose-watch">Docker Compose Watch<a class="headerlink" href="#index-docker-compose-watch" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Automatic file synchronization</li>
-<li>Live reload capabilities</li>
-<li>Enhanced development experience</li>
-<li>Real-time updates without rebuilding</li>
-</ul>
-<h3 id="index-service-orchestration">Service Orchestration<a class="headerlink" href="#index-service-orchestration" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Health checks and dependency management</li>
-<li>Scaling services up or down</li>
-<li>Load balancing and service discovery</li>
-<li>Rolling updates and zero-downtime deployments</li>
-</ul>
-<h3 id="index-production-considerations">Production Considerations<a class="headerlink" href="#index-production-considerations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Security best practices</li>
-<li>Performance optimization</li>
-<li>Monitoring and logging</li>
-<li>Backup and recovery strategies</li>
-</ul>
-<hr />
-<h2 id="index-getting-started">🚀 Getting Started<a class="headerlink" href="#index-getting-started" title="Permanent link">&para;</a></h2>
-<p>Each lab is self-contained and includes:</p>
-<ul>
-<li>Hands-on exercises
- Start with <a href="#dockercomposelabs-labs-index.md" target="_blank"><strong>Start Here</strong></a></li>
-</ul>
-<div style="border:2px solid #2196f3; border-radius:8px; padding:1em; margin:1em 0;">
-While the labs can be practiced using your local Docker environment, it is recommended to use a cloud-based solution like <b>Google Cloud Shell</b>, in which Docker and Docker Compose are pre-installed and ready to use.<br>
-<a href="https://console.cloud.google.com/cloudshell/editor?cloudshell_git_repo=https://github.com/nirgeier/DockerComposeLabs" target="_blank"><img src="https://gstatic.com/cloudssh/images/open-btn.svg" alt="Open in Cloud Shell" /></a>
-</div>
-
-<h2 id="index-resources">Resources<a class="headerlink" href="#index-resources" title="Permanent link">&para;</a></h2>
-<p>The <code>resources</code> directory contains:</p>
-<ul>
-<li>Configuration files for various services</li>
-<li>Sample YAML files for different scenarios</li>
-<li>Supporting materials and documentation</li>
-<li>Server application examples</li>
-</ul>
-<hr />
-<h2 id="index-support">Support<a class="headerlink" href="#index-support" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Each lab is self-contained with detailed explanations</li>
-<li>Common issues and solutions are documented</li>
-<li>Best practices and tips are included throughout</li>
-<li>Real-world examples and use cases provided</li>
-</ul>
-<h2 id="index-documentaion-and-reference">📖 Documentaion and reference<a class="headerlink" href="#index-documentaion-and-reference" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://docs.docker.com/compose/" target="_blank">Docker Compose Documentation</a></li>
-<li><a href="https://hub.docker.com/" target="_blank">Docker Hub</a></li>
-<li><a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a></li>
-</ul>
-<hr />
-<p><strong>Happy Learning!</strong>
-<br /><br />
-<img src="../assets/images/docker-compose-icon.png" alt="Docker Compose Octopus" width="400" height="400" style="background:transparent; display:block; margin: 2rem auto; box-shadow:none; border:none;" /></p>
-<p><img alt="Visitor Badge" src="https://visitor-badge.laobi.icu/badge?page_id=nirgeier" /></p></section>
-                    <section class='print-page md-section' id='section-2' heading-number='2'>
-                        <h1>Labs<a class='headerlink' href='#section-2' title='Permanent link'></a>
+        
+                    <section class='print-page md-section' id='section-1' heading-number='1'>
+                        <h1>Labs Overview<a class='headerlink' href='#section-1' title='Permanent link'></a>
                         </h1>
-                    <section class="print-page" id="index" heading-number="2.1"><h1 id="index-docker-compose-labs-overview">Docker Compose Labs Overview<a class="headerlink" href="#index-docker-compose-labs-overview" title="Permanent link">&para;</a></h1>
+                    <section class="print-page" id="index" heading-number="1.1"><h1 id="index-docker-compose-labs-overview">Docker Compose Labs Overview<a class="headerlink" href="#index-docker-compose-labs-overview" title="Permanent link">&para;</a></h1>
 <hr />
 <h3 id="index-preface">Preface<a class="headerlink" href="#index-preface" title="Permanent link">&para;</a></h3>
 <ul>
@@ -974,7 +734,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <p><strong>Happy Learning!</strong>
 <br /><br />
 <img src="../assets/images/docker-compose-icon.png" alt="Docker Compose Octopus" width="400" height="400" style="background:transparent; display:block; margin: 2rem auto; box-shadow:none; border:none;" /></p>
-<p><img alt="Visitor Badge" src="https://visitor-badge.laobi.icu/badge?page_id=nirgeier" /></p></section><section class="print-page" id="001-intro" heading-number="2.2"><h1 id="001-intro-docker-compose-introduction">Docker Compose Introduction<a class="headerlink" href="#001-intro-docker-compose-introduction" title="Permanent link">&para;</a></h1>
+<p><img alt="Visitor Badge" src="https://visitor-badge.laobi.icu/badge?page_id=nirgeier" /></p></section><section class="print-page" id="001-intro" heading-number="1.2"><h1 id="001-intro-lab-001-docker-compose-introduction">Lab 001 - Docker Compose Introduction<a class="headerlink" href="#001-intro-lab-001-docker-compose-introduction" title="Permanent link">&para;</a></h1>
 <hr />
 <h2 id="001-intro-description">Description<a class="headerlink" href="#001-intro-description" title="Permanent link">&para;</a></h2>
 <ul>
@@ -1034,8 +794,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><code>Docker Compose</code> is particularly useful for local development, <code>CI/CD pipelines</code>, and orchestrating <strong>multi-container</strong> applications.</li>
 </ul>
 <hr />
-<h2 id="001-intro-02-installing-docker-compose">02. Installing Docker Compose<a class="headerlink" href="#001-intro-02-installing-docker-compose" title="Permanent link">&para;</a></h2>
-<p><br> </p>
+<h2 id="001-intro-02-how-to-install-docker-compose">02. How to Install Docker Compose<a class="headerlink" href="#001-intro-02-how-to-install-docker-compose" title="Permanent link">&para;</a></h2>
 <h3 id="001-intro-docker-desktop-for-windows-and-macos">&ndash; Docker Desktop for Windows and macOS<a class="headerlink" href="#001-intro-docker-desktop-for-windows-and-macos" title="Permanent link">&para;</a></h3>
 <ul>
 <li>If you are using <code>Docker Desktop</code> for Windows or macOS, <code>Docker Compose</code> is included in the bundle by default.</li>
@@ -1103,7 +862,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#001-intro-__codelineno-3-6"></a>
 </span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#001-intro-__codelineno-3-7"></a><span class="c1"># Verify `Docker Compose` installation</span>
 </span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#001-intro-__codelineno-3-8"></a>docker<span class="w"> </span>compose<span class="w"> </span>version<span class="w">  </span>
-</span></code></pre></div></section><section class="print-page" id="002-compose-demo" heading-number="2.3"><h1 id="002-compose-demo-docker-compose-demo-multi-container-application">Docker Compose Demo - Multi-Container Application<a class="headerlink" href="#002-compose-demo-docker-compose-demo-multi-container-application" title="Permanent link">&para;</a></h1>
+</span></code></pre></div></section><section class="print-page" id="002-compose-demo" heading-number="1.3"><h1 id="002-compose-demo-lab-2-docker-compose-demo-multi-container-application">Lab &ndash;2 - Docker Compose Demo - Multi-Container Application<a class="headerlink" href="#002-compose-demo-lab-2-docker-compose-demo-multi-container-application" title="Permanent link">&para;</a></h1>
 <p><dv></p>
 <h2 id="002-compose-demo-description">Description<a class="headerlink" href="#002-compose-demo-description" title="Permanent link">&para;</a></h2>
 <p>This lab demonstrates a practical <code>Docker Compose</code> example with a multi-container application. You will explore a complete <code>docker-compose-sample.yml</code> file that defines three inter-connected services:</p>
@@ -1127,8 +886,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 <hr />
 <h2 id="002-compose-demo-lab-overview">Lab Overview<a class="headerlink" href="#002-compose-demo-lab-overview" title="Permanent link">&para;</a></h2>
 <p>This <code>docker-compose-sample.yml</code> file defines a multi-container application with three services: <code>web</code>, <code>app</code>, and <code>db</code>. Below is a detailed explanation of each section.</p>
-<h2 id="002-compose-demo-services">Services<a class="headerlink" href="#002-compose-demo-services" title="Permanent link">&para;</a></h2>
-<h3 id="002-compose-demo-1-web-service">1. <code>web</code> Service<a class="headerlink" href="#002-compose-demo-1-web-service" title="Permanent link">&para;</a></h3>
+<h3 id="002-compose-demo-services">Services<a class="headerlink" href="#002-compose-demo-services" title="Permanent link">&para;</a></h3>
+<h4 id="002-compose-demo-1-web-service">1. <code>web</code> Service<a class="headerlink" href="#002-compose-demo-1-web-service" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Image</strong>: Uses the official <code>nginx:latest</code> image.</li>
 <li><strong>Container Name</strong>: The container is named <code>web-container</code>.</li>
@@ -1142,7 +901,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Networks</strong>: Connects to the <code>webnet</code> network.</li>
 <li><strong>Restart Policy</strong>: Always restarts the container if it stops.</li>
 </ul>
-<h3 id="002-compose-demo-2-app-service">2. <code>app</code> Service<a class="headerlink" href="#002-compose-demo-2-app-service" title="Permanent link">&para;</a></h3>
+<h4 id="002-compose-demo-2-app-service">2. <code>app</code> Service<a class="headerlink" href="#002-compose-demo-2-app-service" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Build</strong>: Builds the image from a <code>Dockerfile</code> located in the <code>./app</code> directory.</li>
 <li><strong>Container Name</strong>: The container is named <code>app-container</code>.</li>
@@ -1155,7 +914,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Networks</strong>: Connects to both <code>webnet</code> and <code>dbnet</code> networks.</li>
 <li><strong>Restart Policy</strong>: Restarts the container on failure.</li>
 </ul>
-<h3 id="002-compose-demo-3-db-service">3. <code>db</code> Service<a class="headerlink" href="#002-compose-demo-3-db-service" title="Permanent link">&para;</a></h3>
+<h4 id="002-compose-demo-3-db-service">3. <code>db</code> Service<a class="headerlink" href="#002-compose-demo-3-db-service" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Image</strong>: Uses the official <code>postgres:latest</code> image.</li>
 <li><strong>Container Name</strong>: The container is named <code>db-container</code>.</li>
@@ -1170,12 +929,12 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Restart Policy</strong>: Restarts the container unless stopped manually.</li>
 </ul>
 <hr />
-<h2 id="002-compose-demo-volumes">Volumes<a class="headerlink" href="#002-compose-demo-volumes" title="Permanent link">&para;</a></h2>
+<h3 id="002-compose-demo-volumes">Volumes<a class="headerlink" href="#002-compose-demo-volumes" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><code>db-data</code></strong>: A named volume used by the <code>db</code> service to persist <code>PostgreSQL</code> database.</li>
 </ul>
 <hr />
-<h2 id="002-compose-demo-networks">Networks<a class="headerlink" href="#002-compose-demo-networks" title="Permanent link">&para;</a></h2>
+<h3 id="002-compose-demo-networks">Networks<a class="headerlink" href="#002-compose-demo-networks" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong><code>webnet</code></strong>: A custom network used by the <code>web</code> and <code>app</code> services to communicate.</li>
 <li><strong><code>dbnet</code></strong>: A custom network used by the <code>app</code> and <code>db</code> services to communicate.</li>
@@ -1190,6 +949,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Understand Networking</strong>: See how services communicate through custom networks.</li>
 <li><strong>Review Volume Management</strong>: Learn how data persistence is handled with defined volumes.</li>
 </ol>
+<hr />
 <h2 id="002-compose-demo-key-learning-points">Key Learning Points<a class="headerlink" href="#002-compose-demo-key-learning-points" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Multi-Service Architecture</strong>: How to structure applications with multiple containers.</li>
@@ -1205,7 +965,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li>How to structure a real-world multi-container application.</li>
 <li>The relationship between web servers, applications, and databases.</li>
 <li>Best practices for service configuration in <code>Docker Compose</code>.</li>
-</ul></section><section class="print-page" id="003-structure" heading-number="2.4"><h1 id="003-structure-docker-compose-structure-complete-guide">Docker Compose Structure - Complete Guide<a class="headerlink" href="#003-structure-docker-compose-structure-complete-guide" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="003-structure" heading-number="1.4"><h1 id="003-structure-lab-003-docker-compose-structure-complete-guide">Lab 003 -Docker Compose Structure - Complete Guide<a class="headerlink" href="#003-structure-lab-003-docker-compose-structure-complete-guide" title="Permanent link">&para;</a></h1>
 <h2 id="003-structure-description">Description<a class="headerlink" href="#003-structure-description" title="Permanent link">&para;</a></h2>
 <p>This comprehensive lab covers the complete structure and syntax of <code>Docker Compose</code> files. You will learn about all the major configuration options, from basic service definitions to advanced features like health checks, networks and volumes.</p>
 <hr />
@@ -1245,7 +1005,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#003-structure-__codelineno-0-15"></a><span class="w">  </span><span class="c1"># Global network definitions (if any)</span>
 </span></code></pre></div>
 <hr />
-<h2 id="003-structure-common-docker-compose-service-features">Common Docker Compose Service Features<a class="headerlink" href="#003-structure-common-docker-compose-service-features" title="Permanent link">&para;</a></h2>
+<h3 id="003-structure-common-docker-compose-service-features">Common Docker Compose Service Features<a class="headerlink" href="#003-structure-common-docker-compose-service-features" title="Permanent link">&para;</a></h3>
 <p>Now, let&rsquo;s detail the most common features you can use within each service definition:</p>
 <table>
 <thead>
@@ -1657,7 +1417,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ul>
 <hr />
-<h2 id="003-structure-a-complete-docker-composeyml-example">A Complete <code>docker-compose.yml</code> Example<a class="headerlink" href="#003-structure-a-complete-docker-composeyml-example" title="Permanent link">&para;</a></h2>
+<h2 id="003-structure-configuration-file">Configuration File<a class="headerlink" href="#003-structure-configuration-file" title="Permanent link">&para;</a></h2>
 <p>Here is an example combining many of the features discussed above, while illustrating a simple web application alongside a backend API and a database:</p>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#003-structure-__codelineno-17-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#003-structure-__codelineno-17-2"></a>
@@ -1738,7 +1498,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-17-77"><a id="__codelineno-17-77" name="__codelineno-17-77" href="#003-structure-__codelineno-17-77"></a><span class="w">  </span><span class="nt">app_network</span><span class="p">:</span><span class="w"> </span><span class="c1"># Network for web and API communication</span>
 </span><span id="__span-17-78"><a id="__codelineno-17-78" name="__codelineno-17-78" href="#003-structure-__codelineno-17-78"></a><span class="w">  </span><span class="nt">db_network</span><span class="p">:</span><span class="w">  </span><span class="c1"># Network for API and DB communication (can be internal for better isolation)</span>
 </span><span id="__span-17-79"><a id="__codelineno-17-79" name="__codelineno-17-79" href="#003-structure-__codelineno-17-79"></a><span class="w">    </span><span class="nt">internal</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># Makes this network only accessible by containers connected to it, not from the host directly</span>
-</span></code></pre></div></section><section class="print-page" id="004-commands" heading-number="2.5"><h1 id="004-commands-docker-compose-commands-essential-cli-reference">Docker Compose Commands - Essential CLI Reference<a class="headerlink" href="#004-commands-docker-compose-commands-essential-cli-reference" title="Permanent link">&para;</a></h1>
+</span></code></pre></div></section><section class="print-page" id="004-commands" heading-number="1.5"><h1 id="004-commands-lab-004-docker-compose-commands-essential-cli-reference">Lab 004 - Docker Compose Commands - Essential CLI Reference<a class="headerlink" href="#004-commands-lab-004-docker-compose-commands-essential-cli-reference" title="Permanent link">&para;</a></h1>
 <h2 id="004-commands-description">Description<a class="headerlink" href="#004-commands-description" title="Permanent link">&para;</a></h2>
 <p>This lab provides a comprehensive guide to <code>Docker Compose</code> command-line interface (<code>CLI</code>). You will master all the essential commands needed to manage multi-container applications effectively, from basic startup and shutdown to advanced debugging and maintenance operations.</p>
 <hr />
@@ -1757,7 +1517,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <h2 id="004-commands-lab-overview">Lab Overview<a class="headerlink" href="#004-commands-lab-overview" title="Permanent link">&para;</a></h2>
 <p>This comprehensive command guide covers the <code>Docker Compose</code> CLI, focusing on the most common and powerful commands that allow you to easily manage complex multi-container application environments.</p>
 <hr />
-<h2 id="004-commands-docker-compose-commands"><code>Docker Compose</code> Commands<a class="headerlink" href="#004-commands-docker-compose-commands" title="Permanent link">&para;</a></h2>
+<h3 id="004-commands-docker-compose-commands"><code>Docker Compose</code> Commands<a class="headerlink" href="#004-commands-docker-compose-commands" title="Permanent link">&para;</a></h3>
 <ul>
 <li>The <code>Docker Compose commands</code> are used to interact with <code>Docker Compose</code> from the command line.</li>
 <li>They allow you to manage multi-container <code>Docker</code> applications defined in a <code>docker-compose.yml</code> file.</li>
@@ -1814,9 +1574,9 @@ While the labs can be practiced using your local Docker environment, it is recom
 </tbody>
 </table>
 <hr />
-<h2 id="004-commands-command-examples"><code>Command</code> Examples<a class="headerlink" href="#004-commands-command-examples" title="Permanent link">&para;</a></h2>
-<h3 id="004-commands-explanation-and-examples-for-commands">Explanation and Examples for <code>Commands</code><a class="headerlink" href="#004-commands-explanation-and-examples-for-commands" title="Permanent link">&para;</a></h3>
-<h4 id="004-commands-docker-compose-up"><code>docker compose up</code><a class="headerlink" href="#004-commands-docker-compose-up" title="Permanent link">&para;</a></h4>
+<h3 id="004-commands-command-examples"><code>Command</code> Examples<a class="headerlink" href="#004-commands-command-examples" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-explanation-and-examples-for-commands">Explanation and Examples for <code>Commands</code><a class="headerlink" href="#004-commands-explanation-and-examples-for-commands" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-up"><code>docker compose up</code><a class="headerlink" href="#004-commands-docker-compose-up" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Builds, (re)creates, starts, and attaches to containers for a service.</li>
 <li>
@@ -1827,7 +1587,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-down"><code>docker compose down</code><a class="headerlink" href="#004-commands-docker-compose-down" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-down"><code>docker compose down</code><a class="headerlink" href="#004-commands-docker-compose-down" title="Permanent link">&para;</a></h5>
 <ul>
 <li>
 <p><strong>Explanation</strong>: Stops containers and removes containers, networks, volumes and images that have been created by <code>docker compose up</code>.</p>
@@ -1839,7 +1599,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-build"><code>docker compose build</code><a class="headerlink" href="#004-commands-docker-compose-build" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-build"><code>docker compose build</code><a class="headerlink" href="#004-commands-docker-compose-build" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Builds or rebuilds services defined in the <code>docker-compose.yml</code> file.</li>
 <li>
@@ -1849,7 +1609,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-ps"><code>docker compose ps</code><a class="headerlink" href="#004-commands-docker-compose-ps" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-ps"><code>docker compose ps</code><a class="headerlink" href="#004-commands-docker-compose-ps" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Lists containers for the application that have been defined in the <code>docker-compose.yml</code> file.</li>
 <li>
@@ -1859,7 +1619,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-logs"><code>docker compose logs</code><a class="headerlink" href="#004-commands-docker-compose-logs" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-logs"><code>docker compose logs</code><a class="headerlink" href="#004-commands-docker-compose-logs" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Displays log output from services.</li>
 <li>
@@ -1869,7 +1629,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-exec"><code>docker compose exec</code><a class="headerlink" href="#004-commands-docker-compose-exec" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-exec"><code>docker compose exec</code><a class="headerlink" href="#004-commands-docker-compose-exec" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Executes a command in a running container.</li>
 <li>
@@ -1879,7 +1639,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-pull"><code>docker compose pull</code><a class="headerlink" href="#004-commands-docker-compose-pull" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-pull"><code>docker compose pull</code><a class="headerlink" href="#004-commands-docker-compose-pull" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Pulls service images defined in the <code>docker-compose.yml</code> file.</li>
 <li>
@@ -1889,7 +1649,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-restart"><code>docker compose restart</code><a class="headerlink" href="#004-commands-docker-compose-restart" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-restart"><code>docker compose restart</code><a class="headerlink" href="#004-commands-docker-compose-restart" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Restarts services.</li>
 <li>
@@ -1899,7 +1659,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-stop"><code>docker compose stop</code><a class="headerlink" href="#004-commands-docker-compose-stop" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-stop"><code>docker compose stop</code><a class="headerlink" href="#004-commands-docker-compose-stop" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Stops running containers without removing them.</li>
 <li>
@@ -1909,7 +1669,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span></code></pre></div>
 </li>
 </ul>
-<h4 id="004-commands-docker-compose-start"><code>docker compose start</code><a class="headerlink" href="#004-commands-docker-compose-start" title="Permanent link">&para;</a></h4>
+<h5 id="004-commands-docker-compose-start"><code>docker compose start</code><a class="headerlink" href="#004-commands-docker-compose-start" title="Permanent link">&para;</a></h5>
 <ul>
 <li><strong>Explanation</strong>: Starts existing containers for a service.</li>
 <li>
@@ -1920,36 +1680,36 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ul>
 <hr />
-<h2 id="004-commands-command-categories-and-use-cases"><code>Command</code> Categories and Use Cases<a class="headerlink" href="#004-commands-command-categories-and-use-cases" title="Permanent link">&para;</a></h2>
-<h3 id="004-commands-development-workflow-commands">Development Workflow <code>Commands</code><a class="headerlink" href="#004-commands-development-workflow-commands" title="Permanent link">&para;</a></h3>
+<h3 id="004-commands-command-categories-and-use-cases"><code>Command</code> Categories and Use Cases<a class="headerlink" href="#004-commands-command-categories-and-use-cases" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-development-workflow-commands">Development Workflow <code>Commands</code><a class="headerlink" href="#004-commands-development-workflow-commands" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>docker compose up -d</code></strong>: Start development environment in background</li>
 <li><strong><code>docker compose logs -f [service]</code></strong>: Monitor application logs during development</li>
 <li><strong><code>docker compose exec [service] bash</code></strong>: Debug issues by accessing container shell</li>
 <li><strong><code>docker compose down</code></strong>: Clean shutdown of development environment</li>
 </ul>
-<h3 id="004-commands-build-and-update-commands">Build and Update <code>Commands</code><a class="headerlink" href="#004-commands-build-and-update-commands" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-build-and-update-commands">Build and Update <code>Commands</code><a class="headerlink" href="#004-commands-build-and-update-commands" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>docker compose build</code></strong>: Rebuild images after code changes</li>
 <li><strong><code>docker compose pull</code></strong>: Update to latest base images</li>
 <li><strong><code>docker compose up --build</code></strong>: Rebuild and restart in one command</li>
 </ul>
-<h3 id="004-commands-maintenance-commands">Maintenance <code>Commands</code><a class="headerlink" href="#004-commands-maintenance-commands" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-maintenance-commands">Maintenance <code>Commands</code><a class="headerlink" href="#004-commands-maintenance-commands" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>docker compose ps</code></strong>: Show the running / stopped containers (output includes: container name, command, state and ports)</li>
 <li><strong><code>docker compose restart [service]</code></strong>: Restart specific problematic services</li>
 <li><strong><code>docker compose stop/start</code></strong>: Pause and resume without losing data</li>
 </ul>
 <hr />
-<h2 id="004-commands-advanced-command-options">Advanced <code>Command</code> Options<a class="headerlink" href="#004-commands-advanced-command-options" title="Permanent link">&para;</a></h2>
-<h3 id="004-commands-common-flags-and-options">Common Flags and Options<a class="headerlink" href="#004-commands-common-flags-and-options" title="Permanent link">&para;</a></h3>
+<h3 id="004-commands-advanced-command-options">Advanced <code>Command</code> Options<a class="headerlink" href="#004-commands-advanced-command-options" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-common-flags-and-options">Common Flags and Options<a class="headerlink" href="#004-commands-common-flags-and-options" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>-f, --file</code></strong>: Specify custom <code>Docker Compose</code> file name</li>
 <li><strong><code>-p, --project-name</code></strong>: Override project name</li>
 <li><strong><code>--env-file</code></strong>: Specify environment file</li>
 <li><strong><code>--profile</code></strong>: Activate specific service profiles</li>
 </ul>
-<h3 id="004-commands-examples-with-advanced-options">Examples with Advanced Options<a class="headerlink" href="#004-commands-examples-with-advanced-options" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-examples-with-advanced-options">Examples with Advanced Options<a class="headerlink" href="#004-commands-examples-with-advanced-options" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#004-commands-__codelineno-10-1"></a><span class="c1"># Use custom compose file</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#004-commands-__codelineno-10-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>-f<span class="w"> </span>docker-compose.prod.yml<span class="w"> </span>up<span class="w"> </span>-d
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#004-commands-__codelineno-10-3"></a>
@@ -1960,8 +1720,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#004-commands-__codelineno-10-8"></a>docker<span class="w"> </span>compose<span class="w"> </span>--env-file<span class="w"> </span>.env.production<span class="w"> </span>up<span class="w"> </span>-d
 </span></code></pre></div>
 <hr />
-<h2 id="004-commands-troubleshooting-commands">Troubleshooting Commands<a class="headerlink" href="#004-commands-troubleshooting-commands" title="Permanent link">&para;</a></h2>
-<h3 id="004-commands-debugging-issues">Debugging Issues<a class="headerlink" href="#004-commands-debugging-issues" title="Permanent link">&para;</a></h3>
+<h3 id="004-commands-troubleshooting-commands">Troubleshooting Commands<a class="headerlink" href="#004-commands-troubleshooting-commands" title="Permanent link">&para;</a></h3>
+<h4 id="004-commands-debugging-issues">Debugging Issues<a class="headerlink" href="#004-commands-debugging-issues" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#004-commands-__codelineno-11-1"></a><span class="c1"># View detailed container information</span>
 </span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#004-commands-__codelineno-11-2"></a>docker<span class="w"> </span>compose<span class="w"> </span>ps<span class="w"> </span>-a
 </span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#004-commands-__codelineno-11-3"></a>
@@ -1995,7 +1755,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Development Workflow</strong>: Integrate <code>Docker Compose</code> into your daily development routine</li>
 <li><strong>Build Management</strong>: Handle image building and updates effectively</li>
 <li><strong>Production Operations</strong>: Perform maintenance and updates on running applications</li>
-</ul></section><section class="print-page" id="005-compose-2helm" heading-number="2.6"><h1 id="005-compose-2helm-how-to-create-and-use-a-helm-chart">How to Create and Use a Helm Chart<a class="headerlink" href="#005-compose-2helm-how-to-create-and-use-a-helm-chart" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="005-compose-2helm" heading-number="1.6"><h1 id="005-compose-2helm-lab-005-compose-to-helm">Lab 005 - Compose to Helm<a class="headerlink" href="#005-compose-2helm-lab-005-compose-to-helm" title="Permanent link">&para;</a></h1>
 <ul>
 <li><code>Helm</code> is a powerful package manager for <code>Kubernetes</code> that simplifies the deployment and management of applications.</li>
 <li>This lab will walk you through the process of creating and using a <code>Helm</code> chart.</li>
@@ -2016,7 +1776,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 </div>
 
 <hr />
-<h2 id="005-compose-2helm-step-1-create-a-new-helm-chart">Step 1: Create a New Helm Chart<a class="headerlink" href="#005-compose-2helm-step-1-create-a-new-helm-chart" title="Permanent link">&para;</a></h2>
+<h2 id="005-compose-2helm-how-to-create-and-use-a-helm-chart">How to Create and Use a Helm Chart<a class="headerlink" href="#005-compose-2helm-how-to-create-and-use-a-helm-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-1-create-a-new-helm-chart">Step 1: Create a New Helm Chart<a class="headerlink" href="#005-compose-2helm-step-1-create-a-new-helm-chart" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Navigate to the directory where you want to create the <code>Helm</code> chart:</p>
@@ -2031,7 +1792,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ol>
 <hr />
-<h2 id="005-compose-2helm-step-2-customize-the-chart">Step 2: Customize the Chart<a class="headerlink" href="#005-compose-2helm-step-2-customize-the-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-2-customize-the-chart">Step 2: Customize the Chart<a class="headerlink" href="#005-compose-2helm-step-2-customize-the-chart" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Edit <code>values.yaml</code>:</strong></p>
@@ -2055,7 +1816,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ol>
 <hr />
-<h2 id="005-compose-2helm-step-3-pack-the-chart">Step 3: Pack the Chart<a class="headerlink" href="#005-compose-2helm-step-3-pack-the-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-3-pack-the-chart">Step 3: Pack the Chart<a class="headerlink" href="#005-compose-2helm-step-3-pack-the-chart" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Pack the chart in a <code>.tgz</code> file:</p>
@@ -2068,7 +1829,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ol>
 <hr />
-<h2 id="005-compose-2helm-step-4-deploy-the-chart">Step 4: Deploy the Chart<a class="headerlink" href="#005-compose-2helm-step-4-deploy-the-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-4-deploy-the-chart">Step 4: Deploy the Chart<a class="headerlink" href="#005-compose-2helm-step-4-deploy-the-chart" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p>Install the chart in your <code>Kubernetes</code> cluster:</p>
@@ -2084,7 +1845,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ol>
 <hr />
-<h2 id="005-compose-2helm-step-5-upgrade-and-manage-the-chart">Step 5: Upgrade and Manage the Chart<a class="headerlink" href="#005-compose-2helm-step-5-upgrade-and-manage-the-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-5-upgrade-and-manage-the-chart">Step 5: Upgrade and Manage the Chart<a class="headerlink" href="#005-compose-2helm-step-5-upgrade-and-manage-the-chart" title="Permanent link">&para;</a></h3>
 <ol>
 <li>
 <p><strong>Upgrade the Release:</strong></p>
@@ -2114,7 +1875,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </li>
 </ol>
 <hr />
-<h2 id="005-compose-2helm-step-6-pass-values-to-the-helm-chart">Step 6: Pass Values to the Helm Chart<a class="headerlink" href="#005-compose-2helm-step-6-pass-values-to-the-helm-chart" title="Permanent link">&para;</a></h2>
+<h3 id="005-compose-2helm-step-6-pass-values-to-the-helm-chart">Step 6: Pass Values to the Helm Chart<a class="headerlink" href="#005-compose-2helm-step-6-pass-values-to-the-helm-chart" title="Permanent link">&para;</a></h3>
 <p>Helm allows you to override default values defined in the <code>values.yaml</code> file by passing custom values during installation or upgrade. This is useful for customizing deployments without modifying the chart itself.</p>
 <ol>
 <li>
@@ -2158,7 +1919,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li>This allows you to customize your <code>Helm</code> chart deployments flexibly, adapting to different environments or requirements without modifying the chart itself.</li>
 </ul>
 </li>
-</ol></section><section class="print-page" id="006-compose-advanced" heading-number="2.7"><h1 id="006-compose-advanced-advanced-docker-compose-configuration">Advanced Docker Compose Configuration<a class="headerlink" href="#006-compose-advanced-advanced-docker-compose-configuration" title="Permanent link">&para;</a></h1>
+</ol></section><section class="print-page" id="006-compose-advanced" heading-number="1.7"><h1 id="006-compose-advanced-lab-006-advanced-docker-compose-configuration">Lab 006 - Advanced Docker Compose Configuration<a class="headerlink" href="#006-compose-advanced-lab-006-advanced-docker-compose-configuration" title="Permanent link">&para;</a></h1>
 <p>This lab demonstrates advanced <code>Docker Compose</code> features including the <code>extends</code> functionality, <code>YAML anchors</code> and modular service definitions for a complete monitoring stack.</p>
 <hr />
 <h2 id="006-compose-advanced-description">Description<a class="headerlink" href="#006-compose-advanced-description" title="Permanent link">&para;</a></h2>
@@ -2220,30 +1981,30 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Function</strong>: Demo application for monitoring</li>
 </ul>
 <hr />
-<h2 id="006-compose-advanced-key-features-demonstrated">Key Features Demonstrated<a class="headerlink" href="#006-compose-advanced-key-features-demonstrated" title="Permanent link">&para;</a></h2>
-<h3 id="006-compose-advanced-docker-compose-extends-feature"><code>Docker Compose extends</code> Feature<a class="headerlink" href="#006-compose-advanced-docker-compose-extends-feature" title="Permanent link">&para;</a></h3>
+<h3 id="006-compose-advanced-key-features-demonstrated">Key Features Demonstrated<a class="headerlink" href="#006-compose-advanced-key-features-demonstrated" title="Permanent link">&para;</a></h3>
+<h4 id="006-compose-advanced-docker-compose-extends-feature"><code>Docker Compose extends</code> Feature<a class="headerlink" href="#006-compose-advanced-docker-compose-extends-feature" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Modularity</strong>: Service definitions are split into separate YAML files</li>
 <li><strong>Reusability</strong>: Base configurations can be shared across environments</li>
 <li><strong>Maintainability</strong>: Changes to base services affect all environments</li>
 </ul>
-<h3 id="006-compose-advanced-yaml-anchors-and-aliases-v1-file">YAML Anchors and Aliases (v1 file)<a class="headerlink" href="#006-compose-advanced-yaml-anchors-and-aliases-v1-file" title="Permanent link">&para;</a></h3>
+<h4 id="006-compose-advanced-yaml-anchors-and-aliases-v1-file">YAML Anchors and Aliases (v1 file)<a class="headerlink" href="#006-compose-advanced-yaml-anchors-and-aliases-v1-file" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>DRY Principle</strong>: Common configuration defined once with <code>x-common-config</code> extension</li>
 <li><strong>Consistency</strong>: All services share the same network and environment settings</li>
 <li><strong>Efficiency</strong>: Reduces repetition and potential for configuration drift</li>
 </ul>
-<h3 id="006-compose-advanced-external-configuration">External Configuration<a class="headerlink" href="#006-compose-advanced-external-configuration" title="Permanent link">&para;</a></h3>
+<h4 id="006-compose-advanced-external-configuration">External Configuration<a class="headerlink" href="#006-compose-advanced-external-configuration" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Environment Files</strong>: Shared <code>.env</code> file for environment variables</li>
 <li><strong>Network Configuration</strong>: Custom bridge network for service communication</li>
 <li><strong>Volume Management</strong>: Named volumes for persistent data storage</li>
 </ul>
-<h3 id="006-compose-advanced-volumes">Volumes<a class="headerlink" href="#006-compose-advanced-volumes" title="Permanent link">&para;</a></h3>
+<h4 id="006-compose-advanced-volumes">Volumes<a class="headerlink" href="#006-compose-advanced-volumes" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>portainer_data</code></strong>: Local volume for Portainer configuration and data persistence</li>
 </ul>
-<h3 id="006-compose-advanced-networks">Networks<a class="headerlink" href="#006-compose-advanced-networks" title="Permanent link">&para;</a></h3>
+<h4 id="006-compose-advanced-networks">Networks<a class="headerlink" href="#006-compose-advanced-networks" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong><code>app_network</code></strong> (v1 only): Custom bridge network enabling isolated service communication</li>
 </ul>
@@ -2296,7 +2057,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li>Best practices for organizing complex multi-service applications.</li>
 <li>Environment variable management in <code>Docker Compose</code>.</li>
 <li>Network and volume configuration for production-like setups.</li>
-</ul></section><section class="print-page" id="007-watch" heading-number="2.8"><h1 id="007-watch-docker-compose-watch">Docker Compose Watch<a class="headerlink" href="#007-watch-docker-compose-watch" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="007-watch" heading-number="1.8"><h1 id="007-watch-lab-007-docker-compose-watch">Lab 007 - Docker Compose Watch<a class="headerlink" href="#007-watch-lab-007-docker-compose-watch" title="Permanent link">&para;</a></h1>
 <p><code>Docker Compose Watch</code> is a powerful tool for monitoring changes in your <code>Docker Compose</code> setup and automatically rebuilding or restarting services when changes are detected. </p>
 <p>This lab demonstrates how to implement and use <code>Docker Compose Watch</code> for streamlined development workflows.</p>
 <hr />
@@ -2320,7 +2081,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <h2 id="007-watch-what-is-docker-compose-watch">What is <code>Docker Compose Watch</code>?<a class="headerlink" href="#007-watch-what-is-docker-compose-watch" title="Permanent link">&para;</a></h2>
 <p><code>Docker Compose Watch</code> is a mechanism for monitoring file system changes which automatically triggers container rebuilds or restarts. It eliminates the need for manual intervention when iterating on containerized applications, significantly improving development efficiency.</p>
 <hr />
-<h2 id="007-watch-key-benefits">Key Benefits<a class="headerlink" href="#007-watch-key-benefits" title="Permanent link">&para;</a></h2>
+<h3 id="007-watch-key-benefits">Key Benefits<a class="headerlink" href="#007-watch-key-benefits" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Efficiency</strong>: Automates rebuilding and restarting processes.</li>
 <li><strong>Consistency</strong>: Ensures changes are immediately reflected in containers.</li>
@@ -2329,18 +2090,18 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Improved Feedback Loop</strong>: Provides immediate reflection of changes.</li>
 </ul>
 <hr />
-<h2 id="007-watch-use-cases">Use Cases:<a class="headerlink" href="#007-watch-use-cases" title="Permanent link">&para;</a></h2>
-<h3 id="007-watch-1-web-application-development">1. Web Application Development<a class="headerlink" href="#007-watch-1-web-application-development" title="Permanent link">&para;</a></h3>
+<h3 id="007-watch-use-cases">Use Cases:<a class="headerlink" href="#007-watch-use-cases" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-1-web-application-development">1. Web Application Development<a class="headerlink" href="#007-watch-1-web-application-development" title="Permanent link">&para;</a></h4>
 <p>Automatically reloads applications when code changes are detected in source files.</p>
-<h3 id="007-watch-2-microservices-development">2. Microservices Development<a class="headerlink" href="#007-watch-2-microservices-development" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-2-microservices-development">2. Microservices Development<a class="headerlink" href="#007-watch-2-microservices-development" title="Permanent link">&para;</a></h4>
 <p>Keeps multiple services synchronized during development cycles.</p>
-<h3 id="007-watch-3-configuration-management">3. Configuration Management<a class="headerlink" href="#007-watch-3-configuration-management" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-3-configuration-management">3. Configuration Management<a class="headerlink" href="#007-watch-3-configuration-management" title="Permanent link">&para;</a></h4>
 <p>Applies configuration file changes without requiring manual restarts.</p>
-<h3 id="007-watch-4-rapid-testing">4. Rapid Testing<a class="headerlink" href="#007-watch-4-rapid-testing" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-4-rapid-testing">4. Rapid Testing<a class="headerlink" href="#007-watch-4-rapid-testing" title="Permanent link">&para;</a></h4>
 <p>Facilitates quick testing of changes in isolated container environments.</p>
 <hr />
-<h2 id="007-watch-implementation-examples">Implementation Examples<a class="headerlink" href="#007-watch-implementation-examples" title="Permanent link">&para;</a></h2>
-<h3 id="007-watch-example-1-basic-application-code-watching">Example 1: Basic Application Code Watching<a class="headerlink" href="#007-watch-example-1-basic-application-code-watching" title="Permanent link">&para;</a></h3>
+<h3 id="007-watch-implementation-examples">Implementation Examples<a class="headerlink" href="#007-watch-implementation-examples" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-example-1-basic-application-code-watching">Example 1: Basic Application Code Watching<a class="headerlink" href="#007-watch-example-1-basic-application-code-watching" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#007-watch-__codelineno-0-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#007-watch-__codelineno-0-2"></a><span class="nt">services</span><span class="p">:</span>
 </span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#007-watch-__codelineno-0-3"></a><span class="w">  </span><span class="nt">app</span><span class="p">:</span>
@@ -2356,7 +2117,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#007-watch-__codelineno-0-13"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./app</span>
 </span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#007-watch-__codelineno-0-14"></a><span class="w">          </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/src/app</span>
 </span></code></pre></div>
-<h3 id="007-watch-example-2-configuration-file-watching">Example 2: Configuration File Watching<a class="headerlink" href="#007-watch-example-2-configuration-file-watching" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-example-2-configuration-file-watching">Example 2: Configuration File Watching<a class="headerlink" href="#007-watch-example-2-configuration-file-watching" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#007-watch-__codelineno-1-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#007-watch-__codelineno-1-2"></a><span class="nt">services</span><span class="p">:</span>
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#007-watch-__codelineno-1-3"></a><span class="w">  </span><span class="nt">app</span><span class="p">:</span>
@@ -2369,7 +2130,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#007-watch-__codelineno-1-10"></a><span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">action</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">restart</span>
 </span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#007-watch-__codelineno-1-11"></a><span class="w">          </span><span class="nt">path</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">./config</span>
 </span></code></pre></div>
-<h3 id="007-watch-example-3-multi-service-watch-setup">Example 3: Multi-Service Watch Setup<a class="headerlink" href="#007-watch-example-3-multi-service-watch-setup" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch-example-3-multi-service-watch-setup">Example 3: Multi-Service Watch Setup<a class="headerlink" href="#007-watch-example-3-multi-service-watch-setup" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#007-watch-__codelineno-2-1"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;3.8&#39;</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#007-watch-__codelineno-2-2"></a><span class="nt">services</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#007-watch-__codelineno-2-3"></a><span class="w">  </span><span class="nt">frontend</span><span class="p">:</span>
@@ -2391,8 +2152,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#007-watch-__codelineno-2-19"></a><span class="w">          </span><span class="nt">target</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/app</span>
 </span></code></pre></div>
 <hr />
-<h2 id="007-watch-demo-file-watching-with-python">Demo: File Watching with Python<a class="headerlink" href="#007-watch-demo-file-watching-with-python" title="Permanent link">&para;</a></h2>
-<h3 id="007-watch--bash-script-watch_demosh">- Bash Script (<code>watch_demo.sh</code>)<a class="headerlink" href="#007-watch--bash-script-watch_demosh" title="Permanent link">&para;</a></h3>
+<h3 id="007-watch-demo-file-watching-with-python">Demo: File Watching with Python<a class="headerlink" href="#007-watch-demo-file-watching-with-python" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch--bash-script-watch_demosh">- Bash Script (<code>watch_demo.sh</code>)<a class="headerlink" href="#007-watch--bash-script-watch_demosh" title="Permanent link">&para;</a></h4>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#007-watch-__codelineno-3-1"></a><span class="ch">#!/bin/bash</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#007-watch-__codelineno-3-2"></a>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#007-watch-__codelineno-3-3"></a><span class="c1"># Initialize the counter file</span>
@@ -2407,7 +2168,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#007-watch-__codelineno-3-12"></a><span class="w">  </span>python3<span class="w"> </span>print_counter.py
 </span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#007-watch-__codelineno-3-13"></a><span class="k">done</span>
 </span></code></pre></div>
-<h3 id="007-watch--python-script-print_counterpy">- Python Script (<code>print_counter.py</code>)<a class="headerlink" href="#007-watch--python-script-print_counterpy" title="Permanent link">&para;</a></h3>
+<h4 id="007-watch--python-script-print_counterpy">- Python Script (<code>print_counter.py</code>)<a class="headerlink" href="#007-watch--python-script-print_counterpy" title="Permanent link">&para;</a></h4>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#007-watch-__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
 </span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#007-watch-__codelineno-4-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
 </span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#007-watch-__codelineno-4-3"></a>
@@ -2476,7 +2237,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Troubleshooting</strong>: Practice debugging watch configuration issues.</li>
 </ol>
 <hr />
-<h2 id="007-watch-when-to-use-docker-compose-watch">When to Use <code>Docker Compose Watch</code><a class="headerlink" href="#007-watch-when-to-use-docker-compose-watch" title="Permanent link">&para;</a></h2>
+<h3 id="007-watch-when-to-use-docker-compose-watch">When to Use <code>Docker Compose Watch</code><a class="headerlink" href="#007-watch-when-to-use-docker-compose-watch" title="Permanent link">&para;</a></h3>
 <p><code>Docker Compose Watch</code> is ideal for:</p>
 <ul>
 <li>Development environments with frequent code changes.</li>
@@ -2538,7 +2299,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li>Best practices for optimizing development workflows.</li>
 <li>Integration techniques with existing development tools.</li>
 <li>Performance considerations and troubleshooting methods.</li>
-</ul></section><section class="print-page" id="008-networks" heading-number="2.9"><h1 id="008-networks-docker-compose-multi-network-architecture">Docker Compose Multi-Network Architecture<a class="headerlink" href="#008-networks-docker-compose-multi-network-architecture" title="Permanent link">&para;</a></h1>
+</ul></section><section class="print-page" id="008-networks" heading-number="1.9"><h1 id="008-networks-lab-008-networks">Lab 008 - Networks<a class="headerlink" href="#008-networks-lab-008-networks" title="Permanent link">&para;</a></h1>
 <p>This lab demonstrates advanced <code>Docker Compose</code> networking concepts through a comprehensive multi-tier application architecture. You will learn how to design, implement and manage complex network topologies, using multiple custom networks with different configurations.</p>
 <hr />
 <h2 id="008-networks-description">Description<a class="headerlink" href="#008-networks-description" title="Permanent link">&para;</a></h2>
@@ -2727,8 +2488,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Cross-network</strong>: Monitoring services access multiple networks.</li>
 </ul>
 <hr />
-<h2 id="008-networks-network-aliases-and-service-discovery">Network Aliases and Service Discovery<a class="headerlink" href="#008-networks-network-aliases-and-service-discovery" title="Permanent link">&para;</a></h2>
-<h3 id="008-networks--service-discovery-examples">- Service Discovery Examples<a class="headerlink" href="#008-networks--service-discovery-examples" title="Permanent link">&para;</a></h3>
+<h3 id="008-networks-network-aliases-and-service-discovery">Network Aliases and Service Discovery<a class="headerlink" href="#008-networks-network-aliases-and-service-discovery" title="Permanent link">&para;</a></h3>
+<h4 id="008-networks--service-discovery-examples">- Service Discovery Examples<a class="headerlink" href="#008-networks--service-discovery-examples" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#008-networks-__codelineno-2-1"></a><span class="c1"># Multiple aliases for flexible service discovery</span>
 </span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#008-networks-__codelineno-2-2"></a><span class="nt">networks</span><span class="p">:</span>
 </span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#008-networks-__codelineno-2-3"></a><span class="w">  </span><span class="nt">frontend_network</span><span class="p">:</span>
@@ -2739,7 +2500,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#008-networks-__codelineno-2-8"></a><span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
 </span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#008-networks-__codelineno-2-9"></a><span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">web-client</span>
 </span></code></pre></div>
-<h3 id="008-networks--benefits-of-aliases">- Benefits of Aliases<a class="headerlink" href="#008-networks--benefits-of-aliases" title="Permanent link">&para;</a></h3>
+<h4 id="008-networks--benefits-of-aliases">- Benefits of Aliases<a class="headerlink" href="#008-networks--benefits-of-aliases" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Load Balancing</strong>: Multiple names for the same service.</li>
 <li><strong>Environment Flexibility</strong>: Different names for different contexts.</li>
@@ -2778,13 +2539,14 @@ While the labs can be practiced using your local Docker environment, it is recom
 </span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#008-networks-__codelineno-5-7"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>order-service<span class="w"> </span>nslookup<span class="w"> </span>postgres-secondary<span class="w"> </span><span class="c1"># Should work</span>
 </span></code></pre></div>
 <h3 id="008-networks--exercise-4-monitoring-network-traffic">- Exercise 4: Monitoring Network Traffic<a class="headerlink" href="#008-networks--exercise-4-monitoring-network-traffic" title="Permanent link">&para;</a></h3>
-<h2 id="008-networks-monitor-network-activity-docker-exec-prometheus-wget-qo-httpgrafana3000apihealth-docker-exec-grafana-curl-s-httpprometheus9090apiv1targets-check-cross-network-metrics-collection-docker-logs-prometheus-grep-scrape"><div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#008-networks-__codelineno-6-1"></a><span class="c1"># Monitor network activity</span>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#008-networks-__codelineno-6-1"></a><span class="c1"># Monitor network activity</span>
 </span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#008-networks-__codelineno-6-2"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>prometheus<span class="w"> </span>wget<span class="w"> </span>-qO-<span class="w"> </span>http://grafana:3000/api/health
 </span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#008-networks-__codelineno-6-3"></a>docker<span class="w"> </span><span class="nb">exec</span><span class="w"> </span>grafana<span class="w"> </span>curl<span class="w"> </span>-s<span class="w"> </span>http://prometheus:9090/api/v1/targets
 </span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#008-networks-__codelineno-6-4"></a>
 </span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#008-networks-__codelineno-6-5"></a><span class="c1"># Check cross-network metrics collection</span>
 </span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#008-networks-__codelineno-6-6"></a>docker<span class="w"> </span>logs<span class="w"> </span>prometheus<span class="w"> </span><span class="p">|</span><span class="w"> </span>grep<span class="w"> </span><span class="s2">&quot;scrape&quot;</span>
-</span></code></pre></div><a class="headerlink" href="#008-networks-monitor-network-activity-docker-exec-prometheus-wget-qo-httpgrafana3000apihealth-docker-exec-grafana-curl-s-httpprometheus9090apiv1targets-check-cross-network-metrics-collection-docker-logs-prometheus-grep-scrape" title="Permanent link">&para;</a></h2>
+</span></code></pre></div>
+<hr />
 <h2 id="008-networks-usage-instructions">Usage Instructions<a class="headerlink" href="#008-networks-usage-instructions" title="Permanent link">&para;</a></h2>
 <h3 id="008-networks--starting-the-application">- Starting the Application<a class="headerlink" href="#008-networks--starting-the-application" title="Permanent link">&para;</a></h3>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#008-networks-__codelineno-7-1"></a><span class="c1"># Start all services</span>
@@ -2811,8 +2573,8 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong><code>MailHog</code> Web UI</strong>: <a href="http://localhost:8025">http://localhost:8025</a></li>
 </ul>
 <hr />
-<h2 id="008-networks-network-configuration-details">Network Configuration Details<a class="headerlink" href="#008-networks-network-configuration-details" title="Permanent link">&para;</a></h2>
-<h3 id="008-networks-ipam-ip-address-management">IPAM (IP Address Management)<a class="headerlink" href="#008-networks-ipam-ip-address-management" title="Permanent link">&para;</a></h3>
+<h3 id="008-networks-network-configuration-details">Network Configuration Details<a class="headerlink" href="#008-networks-network-configuration-details" title="Permanent link">&para;</a></h3>
+<h4 id="008-networks-ipam-ip-address-management">IPAM (IP Address Management)<a class="headerlink" href="#008-networks-ipam-ip-address-management" title="Permanent link">&para;</a></h4>
 <p>Each network uses a dedicated subnet:</p>
 <ul>
 <li><strong>Frontend</strong>: <code>172.20.0.0/24</code> (254 addresses)</li>
@@ -2824,13 +2586,13 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>DMZ</strong>: <code>172.26.0.0/24</code> (254 addresses)</li>
 <li><strong>Monitoring</strong>: <code>172.27.0.0/24</code> (254 addresses)</li>
 </ul>
-<h3 id="008-networks-bridge-network-options">Bridge Network Options<a class="headerlink" href="#008-networks-bridge-network-options" title="Permanent link">&para;</a></h3>
+<h4 id="008-networks-bridge-network-options">Bridge Network Options<a class="headerlink" href="#008-networks-bridge-network-options" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#008-networks-__codelineno-9-1"></a><span class="nt">driver_opts</span><span class="p">:</span>
 </span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#008-networks-__codelineno-9-2"></a><span class="w">  </span><span class="nt">com.docker.network.bridge.name</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;custom-bridge-name&quot;</span>
 </span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#008-networks-__codelineno-9-3"></a><span class="w">  </span><span class="nt">com.docker.network.bridge.enable_icc</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
 </span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#008-networks-__codelineno-9-4"></a><span class="w">  </span><span class="nt">com.docker.network.bridge.enable_ip_masquerade</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
 </span></code></pre></div>
-<h3 id="008-networks-network-labels">Network Labels<a class="headerlink" href="#008-networks-network-labels" title="Permanent link">&para;</a></h3>
+<h4 id="008-networks-network-labels">Network Labels<a class="headerlink" href="#008-networks-network-labels" title="Permanent link">&para;</a></h4>
 <div class="language-yaml highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#008-networks-__codelineno-10-1"></a><span class="nt">labels</span><span class="p">:</span>
 </span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#008-networks-__codelineno-10-2"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;network.description=Purpose</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">usage</span><span class="nv"> </span><span class="s">description&quot;</span>
 </span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#008-networks-__codelineno-10-3"></a><span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;network.environment=production&quot;</span>
@@ -2922,58 +2684,50 @@ While the labs can be practiced using your local Docker environment, it is recom
 <li><strong>Monitoring Integration</strong>: Set up observability across network segments.</li>
 <li><strong>Troubleshooting Networks</strong>: Diagnose and resolve network connectivity issues.</li>
 <li><strong>Production Patterns</strong>: Apply enterprise-grade networking practices.</li>
-</ul></section></section></div><style>.print-site-enumerate-headings #index > h1:before { content: '1 ' }
+</ul></section></section></div><style>.print-site-enumerate-headings #section-1 > h1:before { content: '1 ' }
+.print-site-enumerate-headings #index > h1:before { content: '1.1 ' }
 
-                .print-site-enumerate-headings #index h2:before { content: '1.' counter(counter-index-2) ' ' }
-                .print-site-enumerate-headings #index h2 {  counter-reset: counter-index-3 ;  counter-increment: counter-index-2 }
-            
-                .print-site-enumerate-headings #index h3:before { content: '1.' counter(counter-index-2) '.' counter(counter-index-3) ' ' }
-                .print-site-enumerate-headings #index h3 {  counter-increment: counter-index-3 }
-            
-.print-site-enumerate-headings #section-2 > h1:before { content: '2 ' }
-.print-site-enumerate-headings #index > h1:before { content: '2.1 ' }
-
-                .print-site-enumerate-headings #index h2:before { content: '2.1.' counter(counter-index-2) ' ' }
+                .print-site-enumerate-headings #index h2:before { content: '1.1.' counter(counter-index-2) ' ' }
                 .print-site-enumerate-headings #index h2 {  counter-increment: counter-index-2 }
             
-.print-site-enumerate-headings #001-intro > h1:before { content: '2.2 ' }
+.print-site-enumerate-headings #001-intro > h1:before { content: '1.2 ' }
 
-                .print-site-enumerate-headings #001-intro h2:before { content: '2.2.' counter(counter-001-intro-2) ' ' }
+                .print-site-enumerate-headings #001-intro h2:before { content: '1.2.' counter(counter-001-intro-2) ' ' }
                 .print-site-enumerate-headings #001-intro h2 {  counter-increment: counter-001-intro-2 }
             
-.print-site-enumerate-headings #002-compose-demo > h1:before { content: '2.3 ' }
+.print-site-enumerate-headings #002-compose-demo > h1:before { content: '1.3 ' }
 
-                .print-site-enumerate-headings #002-compose-demo h2:before { content: '2.3.' counter(counter-002-compose-demo-2) ' ' }
+                .print-site-enumerate-headings #002-compose-demo h2:before { content: '1.3.' counter(counter-002-compose-demo-2) ' ' }
                 .print-site-enumerate-headings #002-compose-demo h2 {  counter-increment: counter-002-compose-demo-2 }
             
-.print-site-enumerate-headings #003-structure > h1:before { content: '2.4 ' }
+.print-site-enumerate-headings #003-structure > h1:before { content: '1.4 ' }
 
-                .print-site-enumerate-headings #003-structure h2:before { content: '2.4.' counter(counter-003-structure-2) ' ' }
+                .print-site-enumerate-headings #003-structure h2:before { content: '1.4.' counter(counter-003-structure-2) ' ' }
                 .print-site-enumerate-headings #003-structure h2 {  counter-increment: counter-003-structure-2 }
             
-.print-site-enumerate-headings #004-commands > h1:before { content: '2.5 ' }
+.print-site-enumerate-headings #004-commands > h1:before { content: '1.5 ' }
 
-                .print-site-enumerate-headings #004-commands h2:before { content: '2.5.' counter(counter-004-commands-2) ' ' }
+                .print-site-enumerate-headings #004-commands h2:before { content: '1.5.' counter(counter-004-commands-2) ' ' }
                 .print-site-enumerate-headings #004-commands h2 {  counter-increment: counter-004-commands-2 }
             
-.print-site-enumerate-headings #005-compose-2helm > h1:before { content: '2.6 ' }
+.print-site-enumerate-headings #005-compose-2helm > h1:before { content: '1.6 ' }
 
-                .print-site-enumerate-headings #005-compose-2helm h2:before { content: '2.6.' counter(counter-005-compose-2helm-2) ' ' }
+                .print-site-enumerate-headings #005-compose-2helm h2:before { content: '1.6.' counter(counter-005-compose-2helm-2) ' ' }
                 .print-site-enumerate-headings #005-compose-2helm h2 {  counter-increment: counter-005-compose-2helm-2 }
             
-.print-site-enumerate-headings #006-compose-advanced > h1:before { content: '2.7 ' }
+.print-site-enumerate-headings #006-compose-advanced > h1:before { content: '1.7 ' }
 
-                .print-site-enumerate-headings #006-compose-advanced h2:before { content: '2.7.' counter(counter-006-compose-advanced-2) ' ' }
+                .print-site-enumerate-headings #006-compose-advanced h2:before { content: '1.7.' counter(counter-006-compose-advanced-2) ' ' }
                 .print-site-enumerate-headings #006-compose-advanced h2 {  counter-increment: counter-006-compose-advanced-2 }
             
-.print-site-enumerate-headings #007-watch > h1:before { content: '2.8 ' }
+.print-site-enumerate-headings #007-watch > h1:before { content: '1.8 ' }
 
-                .print-site-enumerate-headings #007-watch h2:before { content: '2.8.' counter(counter-007-watch-2) ' ' }
+                .print-site-enumerate-headings #007-watch h2:before { content: '1.8.' counter(counter-007-watch-2) ' ' }
                 .print-site-enumerate-headings #007-watch h2 {  counter-increment: counter-007-watch-2 }
             
-.print-site-enumerate-headings #008-networks > h1:before { content: '2.9 ' }
+.print-site-enumerate-headings #008-networks > h1:before { content: '1.9 ' }
 
-                .print-site-enumerate-headings #008-networks h2:before { content: '2.9.' counter(counter-008-networks-2) ' ' }
+                .print-site-enumerate-headings #008-networks h2:before { content: '1.9.' counter(counter-008-networks-2) ' ' }
                 .print-site-enumerate-headings #008-networks h2 {  counter-increment: counter-008-networks-2 }
             </style>
 <!--
