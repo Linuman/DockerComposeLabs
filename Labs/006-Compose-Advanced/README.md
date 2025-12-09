@@ -1,4 +1,4 @@
-# Advanced Docker Compose Configuration
+# Lab 006 - Advanced Docker Compose Configuration
 
 This lab demonstrates advanced `Docker Compose` features including the `extends` functionality, `YAML anchors` and modular service definitions for a complete monitoring stack.
 
@@ -70,21 +70,21 @@ The monitoring stack includes the following services:
 
 ---
 
-## Key Features Demonstrated
+### Key Features Demonstrated
 
-### `Docker Compose extends` Feature
+#### `Docker Compose extends` Feature
 
 - **Modularity**: Service definitions are split into separate YAML files
 - **Reusability**: Base configurations can be shared across environments
 - **Maintainability**: Changes to base services affect all environments
 
-### YAML Anchors and Aliases (v1 file)
+#### YAML Anchors and Aliases (v1 file)
 
 - **DRY Principle**: Common configuration defined once with `x-common-config` extension
 - **Consistency**: All services share the same network and environment settings
 - **Efficiency**: Reduces repetition and potential for configuration drift
 
-### External Configuration
+#### External Configuration
 
 - **Environment Files**: Shared `.env` file for environment variables
 - **Network Configuration**: Custom bridge network for service communication
@@ -92,11 +92,11 @@ The monitoring stack includes the following services:
 
 
 
-### Volumes
+#### Volumes
 
 - **`portainer_data`**: Local volume for Portainer configuration and data persistence
 
-### Networks
+#### Networks
 
 - **`app_network`** (v1 only): Custom bridge network enabling isolated service communication
 

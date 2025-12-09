@@ -1,5 +1,7 @@
 
-# Docker Compose Multi-Network Architecture
+# Lab 008 - Networks
+
+
 
 This lab demonstrates advanced `Docker Compose` networking concepts through a comprehensive multi-tier application architecture. You will learn how to design, implement and manage complex network topologies, using multiple custom networks with different configurations.
 
@@ -211,9 +213,9 @@ database_network:
 
 ---
 
-## Network Aliases and Service Discovery
+### Network Aliases and Service Discovery
 
-### - Service Discovery Examples
+#### - Service Discovery Examples
 
 ```yaml
 # Multiple aliases for flexible service discovery
@@ -227,7 +229,7 @@ networks:
       - web-client
 ```
 
-### - Benefits of Aliases
+#### - Benefits of Aliases
 
 - **Load Balancing**: Multiple names for the same service.
 - **Environment Flexibility**: Different names for different contexts.
@@ -286,6 +288,7 @@ docker exec grafana curl -s http://prometheus:9090/api/v1/targets
 # Check cross-network metrics collection
 docker logs prometheus | grep "scrape"
 ```
+
 ---
 
 ## Usage Instructions
@@ -322,9 +325,9 @@ docker-compose exec api-gateway curl http://user-service:8001/api/status
 
 ---
 
-## Network Configuration Details
+### Network Configuration Details
 
-### IPAM (IP Address Management)
+#### IPAM (IP Address Management)
 
 Each network uses a dedicated subnet:
 
@@ -337,7 +340,7 @@ Each network uses a dedicated subnet:
 - **DMZ**: `172.26.0.0/24` (254 addresses)
 - **Monitoring**: `172.27.0.0/24` (254 addresses)
 
-### Bridge Network Options
+#### Bridge Network Options
 
 ```yaml
 driver_opts:
@@ -346,7 +349,7 @@ driver_opts:
   com.docker.network.bridge.enable_ip_masquerade: "true"
 ```
 
-### Network Labels
+#### Network Labels
 
 ```yaml
 labels:

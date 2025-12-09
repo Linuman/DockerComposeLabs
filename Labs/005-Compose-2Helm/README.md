@@ -1,4 +1,6 @@
-# How to Create and Use a Helm Chart
+# Lab 005 - Compose to Helm
+
+
 
 - `Helm` is a powerful package manager for `Kubernetes` that simplifies the deployment and management of applications.
 - This lab will walk you through the process of creating and using a `Helm` chart.
@@ -24,8 +26,9 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
+## How to Create and Use a Helm Chart
 
-## Step 1: Create a New Helm Chart
+### Step 1: Create a New Helm Chart
 
 1. Navigate to the directory where you want to create the `Helm` chart:
 
@@ -43,7 +46,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Step 2: Customize the Chart
+### Step 2: Customize the Chart
 
 1. **Edit `values.yaml`:**
       - Open the `values.yaml` file in the chart directory.
@@ -58,7 +61,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Step 3: Pack the Chart
+### Step 3: Pack the Chart
 
 1. Pack the chart in a `.tgz` file:
 
@@ -73,7 +76,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Step 4: Deploy the Chart
+### Step 4: Deploy the Chart
 
 1. Install the chart in your `Kubernetes` cluster:
 
@@ -94,7 +97,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Step 5: Upgrade and Manage the Chart
+### Step 5: Upgrade and Manage the Chart
 
 1. **Upgrade the Release:**
       - Modify the chart or `values.yaml` as needed.
@@ -123,7 +126,7 @@ While the labs can be practiced using your local Docker environment, it is recom
 
 ---
 
-## Step 6: Pass Values to the Helm Chart
+### Step 6: Pass Values to the Helm Chart
 
 Helm allows you to override default values defined in the `values.yaml` file by passing custom values during installation or upgrade. This is useful for customizing deployments without modifying the chart itself.
 

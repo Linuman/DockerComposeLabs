@@ -1,5 +1,5 @@
 
-# Docker Compose Introduction
+# Lab 001 - Docker Compose Introduction
 
 ---
 
@@ -77,9 +77,9 @@ After completing this lab, you will be ready to:
 
 ---
 
-## 02. Installing Docker Compose
+## 02. How to Install Docker Compose
 
-<br> 
+
 
 ### -- Docker Desktop for Windows and macOS
 
